@@ -37,6 +37,7 @@
     font-size: 18px;
 }
 
+
 /* Hero */
 .hero {
     background: url('/images/banner-image.png') center/cover no-repeat;
@@ -46,6 +47,7 @@
     align-items: center;
     color: white;
     text-align: center;
+
 }
 
 .hero-text h1 {
@@ -66,3 +68,36 @@
     border-radius: 5px;
 }
 
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+footer h3, footer h4 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
